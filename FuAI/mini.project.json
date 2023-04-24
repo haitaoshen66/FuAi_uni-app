@@ -1,3 +1,7 @@
 {
+  "enableNodeModuleBabelTransform": true,
+  "node_modules_es6_whitelist": [ 
+      "@alicloud/mpserverless-sdk"
+  ],
   "enableAppxNg": true
 }

@@ -30,8 +30,8 @@
         </view>
       </view>
       <view class="flex padding flex-direction">
-        <button bindtap="toDoWrong" hover-class="other-button-hover" class="cu-btn bg-red round lg"> 再答一次 </button>
-        <button bindtap="toIndex" hover-class="other-button-hover" class="cu-btn line-red round lg margin-top"> 返回首页 </button>
+        <button onTap="toDoWrong" hover-class="other-button-hover" class="cu-btn bg-red round lg"> 再答一次 </button>
+        <button onTap="toIndex" hover-class="other-button-hover" class="cu-btn line-red round lg margin-top"> 返回首页 </button>
       </view>
     </view>
   </view>

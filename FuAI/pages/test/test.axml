@@ -30,7 +30,7 @@
     </radio-group>
   </view>
   <view class='page_ft flex padding flex-direction'>
-    <button bindtap='nextSubmit' class="cu-btn bg-red round lg">下一题</button>
+    <button onTap='nextSubmit' class="cu-btn bg-red round lg">下一题</button>
   </view>
   <view class="mw-weixin text-center text-gray padding-top">
     <text class="icon-weixin"></text> 20074411

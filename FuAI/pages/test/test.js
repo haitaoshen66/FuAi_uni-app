@@ -1,8 +1,8 @@
 Page({
   data: {},
-  nextSubmit: function(){
+  nextSubmit(){
     my.redirectTo({
-       url: '../results/results'
+       url: '/pages/results/results'
     })
   },
   onLoad() {},

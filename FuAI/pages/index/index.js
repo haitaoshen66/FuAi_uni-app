@@ -35,8 +35,8 @@ Page({
   onShareAppMessage() {
     // 返回自定义分享信息
     return {
-      title: 'My App',
-      desc: 'My App description',
+      title: '快来参与答题吧',
+      desc: '赋爱',
       path: 'pages/index/index',
     };
   },

@@ -2,7 +2,7 @@
 <view class="mw-btn">
   <view class="mw-answer">
     <view onTap="goToTest">
-      <button class='cu-btn bg-red round block lg'>开始答题</button>
+      <button class='cu-btn bg-red round block lg'>认知能力快筛</button>
     </view>
     <view>
       <button class="cu-btn line-red round block lg margin-top" open-type="share"> 推荐给好友 </button>
