@@ -4,7 +4,7 @@ Page({
   },
   goToTest(){
     my.navigateTo({
-      url: '/pages/test/test'
+      url: '/pages/infos/infos'
     })
   },
   onLoad() {

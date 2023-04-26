@@ -8,14 +8,14 @@ page{
   width: 750rpx;
   height: 100vh;
 }
-.mw-btn {
+.page-index {
   position: absolute;
   top: 55vh;
   left: 0;
   width: 750rpx;
   z-index: 2;
 }
-.mw-answer {
+.index-buttons {
   padding: 100rpx 150rpx 30rpx;
 }
 .mw-weixin.text-center {

@@ -1,14 +1,22 @@
 <image src="/images/bg.jpg" class="mw-bg"></image>
-<view class="mw-btn">
-  <view class="mw-answer">
+
+<view class="page-index">
+  
+  <view class="index-buttons">
+
     <view onTap="goToTest">
-      <button class='cu-btn bg-red round block lg'>认知能力快筛</button>
+      <button type="primary">认知能力快筛</button>
     </view>
+
     <view>
-      <button class="cu-btn line-red round block lg margin-top" open-type="share"> 推荐给好友 </button>
+      <button open-type="share"> 推荐给好友 </button>
     </view>
+
   </view>
-  <view class="text-center text-red padding-top" style="opacity: .3">
-    @MENG
+
+
+  <view style="opacity: .3">
+    @Guo4.26
   </view>
+
 </view>

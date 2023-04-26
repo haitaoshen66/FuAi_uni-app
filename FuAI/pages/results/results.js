@@ -7,7 +7,7 @@ Page({
   },
   toIndex: function(){
     my.redirectTo({
-       url: '../index/index'
+       url: 'pages/index/index'
     })
   },
   onLoad() {},

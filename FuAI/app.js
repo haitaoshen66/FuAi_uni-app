@@ -9,37 +9,41 @@ const mpserverless = new MPServerless(my,{
 App({
   mpserverless: mpserverless,
   onLaunch(options) {
-    // 第一次打开
-    // options.query == {number:1}
-    mpserverless.init({authorType: 'anonymous'});
-    console.info('App onLaunch');
+    console.info("app lauch")
+    mpserverless.init(
+      {authorType: 'anonymous'}
+    );
 
-    const res = mpserverless.function.invoke('TwoNumberSum', {
-      name: 'emas'
-    })//.then((res) => {
-      //if (res.success && res.result) {
-        //this.setData({ imageList: res.result.images });
-      //  console.log("suck")
-      //}
-    //}).catch(console.error)
-    ;
 
-    const dbRes = mpserverless.db.collection('questions').find({
-      age:{$gt: 11}
-    });
+    // const res = mpserverless.function.invoke('TwoNumberSum', {
+    //   name: 'emas'
+    // })//.then((res) => {
+    //   //if (res.success && res.result) {
+    //     //this.setData({ imageList: res.result.images });
+    //   //  console.log("suck")
+    //   //}
+    // //}).catch(console.error)
+    // ;
 
-    mpserverless.db.collection('questions').insertOne({
-      name:'hello world'
-    })
+    // const dbRes = mpserverless.db.collection('questions').find({
+    //   age:{$gt: 11}
+    // });
 
-    console.info('LLLL');
-    console.log(res)
-    console.log(dbRes)
-    console.info('LLLL');
+  //   mpserverless.db.collection('questions').insertOne({
+  //     name: 'tom',
+  //     age: 1
+  // })
+  // .then(res => {})
+  // .catch(console.error);
+
+    // console.info('LLLL');
+    // console.log(res)
+    // console.log(dbRes)
+    // console.info('LLLL');
   
   },
+  
   onShow(options) {
-    // 从后台被 scheme 重新打开
-    // options.query == {number:1}
+
   },
 });

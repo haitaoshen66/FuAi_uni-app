@@ -1,11 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/test/test",
     "pages/results/results",
     "pages/mypage/mypage",
-    "pages/questions/baseInfo/baseInfo",
-    "pages/questions/testCloud/testCloud"
+    "pages/questions/questions",
+    "pages/infos/infos"
   ],
   "window": {
     "defaultTitle": "My App"
