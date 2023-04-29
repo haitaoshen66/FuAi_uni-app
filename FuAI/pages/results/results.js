@@ -1,13 +1,32 @@
+const app = getApp();
+const mpserverless = app.mpserverless;
 Page({
-  data: {},
+  data: {
+    score: 0,
+    total: 10
+  },
+  onLoad() {
+    mpserverless.db.collection('anwsers')
+  .findOne({
+
+  }, {
+    projection: { score: 1 }
+  })
+  .then(res => { 
+    this.setData({
+      score: res.result.score
+    })
+  })
+  .catch(console.error);
+  },
   toDoWrong(){
-    my.redirectTo({
-       url: '../test/test'
+    my.navigateTo({
+       url: '../questions/questions'
     })
   },
   toIndex: function(){
-    my.redirectTo({
-       url: 'pages/index/index'
+    my.switchTab({
+       url: '../index/index'
     })
   },
   onLoad() {},

@@ -1,26 +1,36 @@
-page {
-  background-color: #fff;
-}
-.page {
-  padding: 30rpx;
-}
-.mw-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.page-score {
+.container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: flex-end;
-  padding-top:20rpx;
-  padding-bottom:20rpx;
+  height: 100%;
 }
-.score-num {
-  font-size:100rpx;
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
-.page-footer {
-  margin-top:50rpx;
-  text-align: center;
+
+.score {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.button {
+  width: 45%;
+  height: 60px;
+  font-size: 24px;
 }

@@ -3,9 +3,14 @@ const mpserverless = app.mpserverless;
 Page({
   data: {
     questionIndex: 0,
+
     question: '',
     options: [],
-    selectedOptionIndex: null
+    correctOptionIndex: null,
+
+    selectedOptionIndex: null,
+    anwser:[],
+    score:0
   },
 
   onLoad: function(options) {
@@ -23,13 +28,13 @@ Page({
   },
 
   onSelectOption: function(e) {
-    console.log(e.detail.value)
     this.setData({
-      selectedOptionIndex: parseInt(e.detail.value)
+      selectedOptionIndex: e.detail.value
     });
   },
 
   onNextQuestion: function() {
+    // 如果这题没选
     if (this.data.selectedOptionIndex === null) {
       my.showToast({
         content: 'Please select an option'
@@ -37,8 +42,22 @@ Page({
       return;
     }
 
-    // TODO: Save answer to local array
+    // Save answer to local array
+    const anwser = this.data.anwser;
+    anwser.push(this.data.selectedOptionIndex);
+    this.setData({
+      anwser: anwser
+    });
+    //答对加分
+    console.log(this.data.anwser[this.data.questionIndex])
+    console.log(this.data.correctOptionIndex)
+    if(this.data.anwser[this.data.questionIndex] === this.data.correctOptionIndex){
+      this.setData({
+        score: this.data.score + 1
+      });
+    }
 
+    //最后一题
     if (this.data.questionIndex === 9) {
         my.showToast({
           type: 'fail',
@@ -52,7 +71,7 @@ Page({
         selectedOptionIndex: null
       });
       //this.data.options[this.data.selectedOptionIndex].checked = null;
-      // TODO: save data
+
       
       // TODO: Load next question from cloud database
       mpserverless.db.collection('questions').findOne({
@@ -74,12 +93,20 @@ Page({
         content: '请选择本题选项'
       });
       return;
-    }else{
-    // TODO: Save final answer to local array
+    }
+    // TODO: Save final anwser to cloud
+    console.log(this.data.score);
+    mpserverless.db.collection('answers').insertOne({
+      score: this.data.score,
+      answer: this.data.anwser
+    })
+    .then(res => {})
+    .catch(console.error);
 
-    my.navigateTo({
-      url: '/pages/results/results'
-    });
+    if (this.data.questionIndex === 9) {
+      my.navigateTo({
+        url: '/pages/results/results'
+      });
   }
 }
 });
