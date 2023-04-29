@@ -6,6 +6,7 @@ const mpserverless = new MPServerless(my,{
   endpoint: 'https://api.next.bspapp.com',
 });
 
+
 App({
   mpserverless: mpserverless,
   onLaunch(options) {
@@ -13,33 +14,6 @@ App({
     mpserverless.init(
       {authorType: 'anonymous'}
     );
-
-
-    // const res = mpserverless.function.invoke('TwoNumberSum', {
-    //   name: 'emas'
-    // })//.then((res) => {
-    //   //if (res.success && res.result) {
-    //     //this.setData({ imageList: res.result.images });
-    //   //  console.log("suck")
-    //   //}
-    // //}).catch(console.error)
-    // ;
-
-    // const dbRes = mpserverless.db.collection('questions').find({
-    //   age:{$gt: 11}
-    // });
-
-  //   mpserverless.db.collection('questions').insertOne({
-  //     name: 'tom',
-  //     age: 1
-  // })
-  // .then(res => {})
-  // .catch(console.error);
-
-    // console.info('LLLL');
-    // console.log(res)
-    // console.log(dbRes)
-    // console.info('LLLL');
   
   },
   
