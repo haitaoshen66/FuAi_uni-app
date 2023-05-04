@@ -1,42 +1,44 @@
-<view class="container">
+
+<view class="bg">
 
   <view class="header">Question {{questionIndex + 1}} of 10</view>
   <view class="question">{{question}}</view>
 
-  <view class="options">
+  <!-- <view class="options" >
 
     <view class="option" data-index="0">
-      <image class="option-image" src="{{options[0].image}}" mode="aspectFill" />
+      <image class="testPic" src="{{options[0].image}}" mode="aspectFill" />
       <view class="option-text">{{options[0].text}}</view>
     </view>
 
     <view class="option"  data-index="1">
-      <image class="option-image" src="{{options[1].image}}" mode="aspectFill" />
+      <image class="testPic" src="{{options[1].image}}" mode="aspectFill" />
       <view class="option-text">{{options[1].text}}</view>
     </view>
 
     <view class="option" data-index="2">
-      <image class="option-image" src="{{options[2].image}}" mode="aspectFill" />
+      <image class="testPic" src="{{options[2].image}}" mode="aspectFill" />
       <view class="option-text">{{options[2].text}}</view>
     </view>
 
     <view class="option" data-index="3">
-      <image class="option-image" src="{{options[3].image}}" mode="aspectFill" />
+      <image class="testPic" src="{{options[3].image}}" mode="aspectFill" />
       <view class="option-text">{{options[3].text}}</view>
     </view>
 
-  </view>
+  </view> -->
 
   <view class="page-section-ratio">
     <radio-group class="radio-group" onChange="onSelectOption" name="lib">
       <label class="radio" a:for="{{options}}" key="label-{{index}}">
-        <radio value="{{options[index].text}}" checked="{{options[index].checked}}" />
-        <text class="radio-text">{{options[index].text}}</text>
+        <radio value="{{options[index].text}}" checked="{{options[index].checked}}" />{{options[index].text}}
+        <image class="testPic" src="{{options[index].image}}" mode="aspectFill" />
+        <!-- <text class="radio-text">{{options[index].text}}</text> -->
       </label>
     </radio-group>
   </view>
 
-  <button class="button" onTap="onNextQuestion">Next</button>
-  <button class="button" onTap="onSubmitAnswers">Submit</button>
+  <button type="default" class="botton" onTap="onNextQuestion">Next</button>
+  <button type="primary" class="button" onTap="onSubmitAnswers">Submit</button>
 
 </view>

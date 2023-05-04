@@ -8,6 +8,13 @@ button + button {
 .date-radio label + label {
   margin-left: 20rpx;
 }
+.bg{
+  background-image:"/images/bg.jpg";
+  padding-top: 174rpx;
+  padding-bottom: 250rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 
 
 .row {

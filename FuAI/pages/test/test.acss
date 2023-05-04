@@ -22,3 +22,10 @@ page {
 .page .radio-group, .page .checkbox-group {
   display: block;
 }
+.bg{
+  background-image:"/images/bg.jpg";
+  padding-top: 174rpx;
+  padding-bottom: 250rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
