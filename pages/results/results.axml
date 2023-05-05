@@ -1,0 +1,15 @@
+
+<view class="bg">
+
+  <text class="title">测试结果</text>
+
+  <text class="score">{{score}}分</text>
+
+  <text class="info">共{{total}}道题，答对了{{score}}道题</text>
+
+  <view class="button-container">
+    <button class="button" type="primary" onTap="toDoWrong">再答一次</button>
+    <button class="button" onTap="toIndex">返回首页</button>
+  </view>
+
+</view>

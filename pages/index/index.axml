@@ -1,0 +1,22 @@
+<image src="/images/logo.png" class="mw-bg"></image>
+
+<view class="page-index">
+  
+  <view class="index-buttons">
+
+    <view onTap="goToTest">
+      <button type="primary">认知能力快筛</button>
+    </view>
+
+    <view>
+      <button open-type="share"> 推荐给好友 </button>
+    </view>
+
+  </view>
+
+
+  <view style="opacity: .3">
+    @Guo4.26
+  </view>
+
+</view>

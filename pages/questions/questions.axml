@@ -1,0 +1,46 @@
+<view class="container">
+
+  <view class="header">Question {{questionIndex + 1}} of 10</view>
+  <view class="question">{{question}}</view>
+
+  <view class="options">
+
+    <view class="option" data-index="0">
+      <image class="option-image" src="{{options[0].image}}" mode="aspectFill" />
+      <view class="option-text">{{options[0].text}}</view>
+    </view>
+
+    <view class="option"  data-index="1">
+      <image class="option-image" src="{{options[1].image}}" mode="aspectFill" />
+      <view class="option-text">{{options[1].text}}</view>
+    </view>
+
+    <view class="option" data-index="2">
+      <image class="option-image" src="{{options[2].image}}" mode="aspectFill" />
+      <view class="option-text">{{options[2].text}}</view>
+    </view>
+
+    <view class="option" data-index="3">
+      <image class="option-image" src="{{options[3].image}}" mode="aspectFill" />
+      <view class="option-text">{{options[3].text}}</view>
+    </view>
+
+  </view>
+  
+  <!-- change!!! -->
+  <form onReset="onNextQuestion">
+    <view class="page-section-ratio">
+      <radio-group class="radio-group" onChange="onSelectOption" name="lib">
+        <label class="radio" a:for="{{options}}" key="label-{{index}}">
+          <radio value="{{item.text}}" checked="{{item.checked}}" />
+          <text class="radio-text">{{item.text}}</text>
+        </label>
+      </radio-group>
+    </view>
+    <button class="button" formType="reset">Next</button>
+    <button class="button" onTap="onSubmitAnswers">Submit</button>
+  </form>
+  <!-- <button class="button" onTap="onNextQuestion" formType="reset">Next</button> -->
+
+
+</view>

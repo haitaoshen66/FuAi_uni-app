@@ -1,0 +1,40 @@
+.testPic{
+  width: 120px;
+  height: 120px;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 10px
+}
+.radioBlock{
+  display: block;
+}
+.page-section-demo {
+  padding: 32rpx;
+}
+.page {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 33rpx;
+  padding: 32rpx;
+  flex: 1;
+}
+
+.page-description {
+  margin-bottom: 32rpx;
+}
+
+.page-section {
+  background: #fff;
+  margin-bottom: 32rpx;
+}
+
+.page-section-title {
+  padding: 16rpx 32rpx;
+}
+.bg{
+  background-image:"/images/bg.jpg";
+  padding-top: 174rpx;
+  padding-bottom: 250rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

@@ -1,0 +1,50 @@
+<image src="/images/bg.jpg" class="mw-bg"></image>
+<view class="info-page">
+
+  <view class="page-description" type="title">认知能力测试</view>
+
+
+    <form onSubmit="onSubmit" onReset="onReset">
+
+      <view class="form-section">
+
+        <view class="form-radio-label">
+          Gender:
+        </view>
+        <radio-group class="form-input" name="gender" onChange="radioChange">
+          <label class="radio-label"><radio value="male" checked="{{gender=='male'}}"/>男</label>
+          <label class="radio-label"><radio value="female" checked="{{gender=='female'}}"/>女</label>
+        </radio-group>
+        
+      </view>
+
+
+      <view class="form-section">
+
+        <view class="form-input-label">
+          Age:
+        </view>
+        <input class="form-input" type="number" name="age" value="{{age}}" placeholder="请输入年龄" onInput="inputChange"/>
+
+      </view>
+
+
+      <view class="page-section">
+        <view class="form-picker-label">Education Level:</view>
+
+        <picker onChange="PickerChange" value="{{index}}" range="{{educationLevels}}" range-key="name">
+          <view class="row">
+            <view class="row-title">教育水平</view>
+            <view class="row-extra">当前选择：{{educationLevels[index].name}}</view>
+          </view>
+
+        </picker>
+      </view>
+
+      <view><button type="ghost" formType="reset">重置</button></view>
+      <view><button type="primary" formType="submit">提交</button></view>
+
+    </form>
+
+
+</view>

@@ -1,0 +1,38 @@
+<view class="bg">
+  <view class="padding-top text-center">
+    第<text class="text-bold text-xl">1</text>题
+    共<text class="text-bold text-xl">20</text>题
+  </view>
+  <view class='page__hd padding'>
+    <view class="page__title">
+      <text class="text-bold">【单选题】</text>
+      请记住下面出现的图片（倒计时321）
+    </view>
+  </view>
+  <view class="page__bd">
+    <radio-group class="radio-group">
+      <label class="radio my-choosebox">
+        <radio value="A" checked="false" />
+        <text class="margin-left-xs">啊啊</text>
+      </label>
+      <label class="radio my-choosebox">
+        <radio value="B" checked="false" />
+        <text class="margin-left-xs">阿巴</text>
+      </label>
+      <label class="radio my-choosebox">
+        <radio value="C" checked="false" />
+        <text class="margin-left-xs">啊啊啊</text>
+      </label>
+      <label class="radio my-choosebox">
+        <radio value="D" checked="false" />
+        <text class="margin-left-xs">啊对</text>
+      </label>
+    </radio-group>
+  </view>
+  <view class='page_ft flex padding flex-direction'>
+    <button onTap='nextSubmit' class="cu-btn bg-red round lg">下一题</button>
+  </view>
+  <view class="mw-weixin text-center text-gray padding-top">
+    <text class="icon-weixin"></text> 20074411
+  </view>
+</view>
