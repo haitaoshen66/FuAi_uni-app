@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/results/results",
+    "pages/mypage/mypage",
+    "pages/questions/questions",
+    "pages/infos/infos"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  },
+  "behavior": {
+    "requestReferrerStrategy": "page"
+  },
+  "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页"
+      },
+      {
+        "pagePath": "pages/mypage/mypage",
+        "name": "我的"
+      }
+    ]
+  }
+}
