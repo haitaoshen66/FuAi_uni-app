@@ -5,16 +5,19 @@
 EMAS Serverless 开发者版 @alicloud/mpserverless-sdk
 
 ### 使用
-扫码测试
+扫码测试  
 
+### 任务list：  
+- 加入section页面，在不同部分的题目中间穿插
+- 将题目的不同选项与雷达图的分数挂钩
+- 优化数据库
 ### 介绍
-目前整体分为五个页面
+目前整体分为如下几个页面
 - index
 - infos
 - questions
 - results
 - mypage
-
 ##### index√
 	程序首页，点击认知能力快筛进入infos页面
 ##### infos
